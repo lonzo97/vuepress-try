@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ES6 | Sep7th</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/logo.png">
+  <meta name="referrer" content="no-referrer">
+    
+    <link rel="preload" href="/assets/css/0.styles.13e94363.css" as="style"><link rel="preload" href="/assets/js/app.88008fea.js" as="script"><link rel="preload" href="/assets/js/2.65358ccd.js" as="script"><link rel="preload" href="/assets/js/22.6ae45680.js" as="script"><link rel="prefetch" href="/assets/js/10.e1b3f80c.js"><link rel="prefetch" href="/assets/js/11.adee7f18.js"><link rel="prefetch" href="/assets/js/12.6c30327d.js"><link rel="prefetch" href="/assets/js/13.8b2f5bdc.js"><link rel="prefetch" href="/assets/js/14.dd301324.js"><link rel="prefetch" href="/assets/js/15.d68c814d.js"><link rel="prefetch" href="/assets/js/16.4620a7d8.js"><link rel="prefetch" href="/assets/js/17.355e40ee.js"><link rel="prefetch" href="/assets/js/18.2554b878.js"><link rel="prefetch" href="/assets/js/19.430fd774.js"><link rel="prefetch" href="/assets/js/20.efa618b9.js"><link rel="prefetch" href="/assets/js/21.d5fe63f2.js"><link rel="prefetch" href="/assets/js/23.b5e4eb38.js"><link rel="prefetch" href="/assets/js/24.d9e00041.js"><link rel="prefetch" href="/assets/js/25.2b746d3a.js"><link rel="prefetch" href="/assets/js/26.80bd9d79.js"><link rel="prefetch" href="/assets/js/27.235ba362.js"><link rel="prefetch" href="/assets/js/28.7261c94a.js"><link rel="prefetch" href="/assets/js/3.d8e51a14.js"><link rel="prefetch" href="/assets/js/4.ef945d7f.js"><link rel="prefetch" href="/assets/js/5.1d925d64.js"><link rel="prefetch" href="/assets/js/6.c882d781.js"><link rel="prefetch" href="/assets/js/7.f5c8879f.js"><link rel="prefetch" href="/assets/js/8.24b8feea.js"><link rel="prefetch" href="/assets/js/9.72df0a03.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.13e94363.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="Sep7th" class="logo"> <span class="site-name can-hide">Sep7th</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  Blog
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  Css
+</a></div><div class="nav-item"><a href="/typescript/" class="nav-link">
+  TypeScript
+</a></div><div class="nav-item"><a href="/javascript/" class="nav-link router-link-active">
+  JavaScript
+</a></div><div class="nav-item"><a href="/git/" class="nav-link">
+  Git
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link">
+  Blog
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  Css
+</a></div><div class="nav-item"><a href="/typescript/" class="nav-link">
+  TypeScript
+</a></div><div class="nav-item"><a href="/javascript/" class="nav-link router-link-active">
+  JavaScript
+</a></div><div class="nav-item"><a href="/git/" class="nav-link">
+  Git
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/javascript/Array.html" class="sidebar-link">Array</a></li><li><a href="/javascript/Date类型.html" class="sidebar-link">Date</a></li><li><a href="/javascript/正则.html" class="sidebar-link">正则</a></li><li><a href="/javascript/模块化.html" class="sidebar-link">模块化</a></li><li><a href="/javascript/ES6.html" class="active sidebar-link">ES6</a><ul class="sidebar-sub-headers"></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="计算属性"><a href="#计算属性" class="header-anchor">#</a> 计算属性</h3> <p>以字面量创建对象时，可以直接将 [] 的计算结果当做属性名</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token string">'NO'</span> <span class="token operator">+</span> <span class="token operator">++</span>i<span class="token punctuation">]</span><span class="token operator">:</span> i<span class="token punctuation">;</span>
+    <span class="token punctuation">[</span><span class="token string">'NO'</span> <span class="token operator">+</span> <span class="token operator">++</span>i<span class="token punctuation">]</span><span class="token operator">:</span> i<span class="token punctuation">;</span>
+    <span class="token punctuation">[</span><span class="token string">'NO'</span> <span class="token operator">+</span> <span class="token operator">++</span>i<span class="token punctuation">]</span><span class="token operator">:</span> i
+<span class="token punctuation">}</span>
+
+<span class="token comment">// obj { NO1: 1, NO2: 2, NO3: 3 }</span>
+</code></pre></div><h3 id="参数解构"><a href="#参数解构" class="header-anchor">#</a> 参数解构</h3> <ul><li>在vuex的action函数的应用</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>actions<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">increment</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'increment'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/javascript/模块化.html" class="prev">
+        模块化
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.88008fea.js" defer></script><script src="/assets/js/2.65358ccd.js" defer></script><script src="/assets/js/22.6ae45680.js" defer></script>
+  </body>
+</html>
