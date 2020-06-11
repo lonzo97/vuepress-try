@@ -21,8 +21,8 @@ module.exports = {
         link: '/'
       },
       {
-        text: 'Blog',
-        link: '/blog/'
+        text: 'Note',
+        link: '/note/'
       },
       {
         text: 'Css',
@@ -37,6 +37,10 @@ module.exports = {
         link: '/javascript/'
       },
       {
+        text: 'Vue',
+        link: '/vue/'
+      },
+      {
         text: 'Git',
         link: '/git/'
       }
@@ -44,9 +48,9 @@ module.exports = {
     // 菜单栏，可设置为不同页面展示不同侧边栏
     sidebar: {
       // 博客
-      '/blog/': [
-        '/blog/Vant.md',
-        '/blog/前端学习计划.md'
+      '/note/': [
+        '/note/前端学习计划.md',
+        '/note/Questions.md'
       ],
       // css
       '/css/': [
@@ -57,7 +61,8 @@ module.exports = {
       ],
       // ts
       '/typescript/': [
-        '/typescript/基础知识.md'
+        '/typescript/基础类型.md',
+        '/typescript/高级类型.md'
       ],
       // js
       '/javascript/': [
@@ -66,6 +71,11 @@ module.exports = {
         '/javascript/正则.md',
         '/javascript/模块化.md',
         '/javascript/ES6.md',
+      ],
+      '/vue/': [
+        '/vue/使用插件实现一个加载组件.md',
+        '/vue/利用v-model优化自定义组件.md',
+        '/vue/全局引入stylus变量、函数等.md'
       ],
       '/git/': [
         '/git/修改提交信息.md',
