@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{254:function(t,n,a){"use strict";a.r(n);var e={name:"SpecialLayout",components:{},data:function(){return{}}},s=a(17),c=Object(s.a)(e,(function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"my-layout"},[this._v("\n  这是我自己的样式hahah\n")])}),[],!1,null,"025539d0",null);n.default=c.exports}}]);

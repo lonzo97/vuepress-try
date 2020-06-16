@@ -41,6 +41,10 @@ module.exports = {
         link: '/vue/'
       },
       {
+        text: 'React',
+        link: '/react/'
+      },
+      {
         text: 'Git',
         link: '/git/'
       }
@@ -49,7 +53,7 @@ module.exports = {
     sidebar: {
       // 博客
       '/note/': [
-        '/note/前端学习计划.md',
+        '/note/学习资源.md',
         '/note/Questions.md'
       ],
       // css
@@ -77,6 +81,9 @@ module.exports = {
         '/vue/利用v-model优化自定义组件.md',
         '/vue/全局引入stylus变量、函数等.md'
       ],
+      '/react/':[
+        '/react/react-router相关.md'
+      ],
       '/git/': [
         '/git/修改提交信息.md',
         '/git/远程操作.md',
@@ -86,6 +93,21 @@ module.exports = {
     }
   },
   plugins: [
-    ['@vuepress/back-to-top']
+    [
+      '@vuepress/back-to-top',
+      // 博客配置
+      ['@vuepress/blog', {
+        title: 'Sep7th',
+        // 日期格式
+        dateFormat: 'YYYY-MM-DD',
+        directories: [
+          {
+            id: 'daily',
+            dirname: 'daily',
+            path: '/'
+          }
+        ],
+      }]
+    ]
   ]
 }
