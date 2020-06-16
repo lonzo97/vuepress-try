@@ -82,7 +82,8 @@ module.exports = {
         '/vue/全局引入stylus变量、函数等.md'
       ],
       '/react/':[
-        '/react/react-router相关.md'
+        '/react/react-router相关.md',
+        '/react/使用axios请求数据.md'
       ],
       '/git/': [
         '/git/修改提交信息.md',

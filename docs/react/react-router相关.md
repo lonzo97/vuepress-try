@@ -70,6 +70,8 @@ function APP() {
     </Router>
   )
 }
+
+export default APP
 ```
 
 ## 参考链接
